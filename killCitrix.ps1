@@ -1,0 +1,1 @@
+get-process | ? { $_.description -imatch "citrix" } | % { Stop-Process $_ }
